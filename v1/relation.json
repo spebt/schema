@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "relation.json",
+    "title": "Detector to FOV relation schema",
+    "description": "Detector to FOV relation section of the YAML configuration file schema.\n Unit of length is mm. Unit of angle is degrees.",
+    "type": "object",
+    "properties": {
+        "radial distance": {
+           "$ref": "transformation_data.json"
+        },
+        "tangential shift": {
+            "$ref": "transformation_data.json"
+         },
+        "rotations": {
+            "$ref": "transformation_data.json"
+        }
+    },
+    "required": [
+        "radial distance, rotations"
+    ]
+}
