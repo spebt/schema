@@ -1,3 +1,10 @@
+
+      
+
+
+
+
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
@@ -31,6 +38,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Copy To Branches Action
+        uses: planetoftheweb/copy-to-branches@v1
+        env:
+          key: main
+          files: v1
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
