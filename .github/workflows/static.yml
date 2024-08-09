@@ -36,8 +36,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout master
         uses: actions/checkout@v4
+        with:
+          ref: 'main'
       # Deploy to local repo
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
@@ -46,7 +48,8 @@ jobs:
           BRANCH: module
           FOLDER: v1
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          TARGET_DIR: v1
+  
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
