@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft-07/schema",
-    "$id": "detector.json",
+    "$id": "/v1/detector.json",
     "title": "detector schema",
     "description": "Detector section of the YAML configuration file schema.",
     "type": "object",

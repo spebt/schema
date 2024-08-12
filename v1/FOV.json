@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft-07/schema",
-    "$id": "FOV.json",
+    "$id": "/v1/FOV.json",
     "title": "FOV schema",
     "description": "FOV section of the YAML configuration file schema.",
     "type": "object",
