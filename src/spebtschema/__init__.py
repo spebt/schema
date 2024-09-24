@@ -13,6 +13,7 @@ Functions:
 - validate(json_data, schema): Validates the given JSON data against the provided schema.
 """
 
-__all__ = ["yaml"]
+__all__ = ["yaml", "v1"]
 
-import yaml
+from . import yaml
+from . import v1

@@ -1,3 +1,3 @@
-from _validator import validate
+from ._validator import validate
 
 __all__ = ["validate"]
