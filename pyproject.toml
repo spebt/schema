@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [{ name = "Fang Han", email = "fhan0904@gmail.com" }]
+dependencies = ["numpy", "pyyaml", "jsonschema"]
+name = "spebtschema"
+dynamic = ["version"]
+description = "SPEBT schema module for detector configuration"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.9.6"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.setuptools_scm]
+
+[project.urls]
+Homepage = "https://github.com/spebt/schema/"
+Issues = "https://github.com/spebt/schema/issues"
+Documentation = "https://spebt.github.io/schema/"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["spebtschema"]
+namespaces = false
