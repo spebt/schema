@@ -36,7 +36,7 @@ def validate(input: dict, name: str, version: str = "v1"):
 
     # Validate the JSON data
     validator = Draft7Validator(
-        schema_registry[f"/{version}/{name}"].contents, registry=schema_registry
+        schema_registry[f"/{version}/{name}.json"].contents, registry=schema_registry
     )
 
     try:

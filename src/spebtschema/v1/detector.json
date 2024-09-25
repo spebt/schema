@@ -13,7 +13,7 @@
             },
             "minItems": 1
         },
-        "N-subdivision xyz": {
+        "N subdivision xyz": {
             "type": "array",
             "items": {
                 "type": "integer"
@@ -31,7 +31,7 @@
     },
     "required": [
         "detector geometry",
-        "N-subdivision xyz",
+        "N subdivision xyz",
         "active geometry indices"
     ]
 }
